@@ -1,0 +1,16 @@
+{
+    "Language": true,
+    "GlobalSetting": true,
+    "Currency": true,
+    "BasicPayment": true,
+    "Subscription": true,
+    "PageBuilder": true,
+    "SupportTicket": true,
+    "NewsLetter": true,
+    "Testimonial": true,
+    "Installer": true,
+    "CustomMenu": true,
+    "Sitemap": true,
+    "Kyc": true,
+    "JobPost": true
+}

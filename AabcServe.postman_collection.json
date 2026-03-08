@@ -1,0 +1,2946 @@
+{
+	"info": {
+		"_postman_id": "136ead34-9de1-4a4d-ab3b-33d3e39816a3",
+		"name": "AabcServe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2758820",
+		"_collection_link": "https://wsus00.postman.co/workspace/wsus~e3e70e15-d9ca-4cf5-a214-dcb7e60b879f/collection/2758820-136ead34-9de1-4a4d-ab3b-33d3e39816a3?action=share&source=collection_link&creator=2758820"
+	},
+	"item": [
+		{
+			"name": "Website",
+			"item": [
+				{
+					"name": "website-setup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/website-setup",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"website-setup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "download-file",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/download-file/banglaeshi-cleaner-2023-05-07-05-52-31-9414.jpg",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"download-file",
+								"banglaeshi-cleaner-2023-05-07-05-52-31-9414.jpg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all-languages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/all-languages",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"all-languages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "current-language-details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/current-language-details",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"current-language-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all-currencies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/all-currencies",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"all-currencies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "current-currency-details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/current-currency-details",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"current-currency-details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "join-as-a-provider",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/join-as-a-provider",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"join-as-a-provider"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "about-us",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/about-us",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"about-us"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contact-us",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Language-Code",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/contact-us",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"contact-us"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "blogs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/blogs",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"blogs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "blog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/blog/now-get-massage-service-from-mr-joe",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"blog",
+								"now-get-massage-service-from-mr-joe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "faq",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/faq",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"faq"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "terms-and-conditions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/terms-and-conditions",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"terms-and-conditions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "privacy-policy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/privacy-policy",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"privacy-policy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "custom-pages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/custom-page",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"custom-page"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/page/example",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"page",
+								"example"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "services",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/services",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/service/electric-oven-repair-fixing-service",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"service",
+								"electric-oven-repair-fixing-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "providers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/providers/david_richard",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"providers",
+								"david_richard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store-service-review",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "subscribe-request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "subscriber-verification",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "request-provider",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "check-username",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "state-by-country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/state-by-country/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"state-by-country",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "city-by-state",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/city-by-state/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"city-by-state",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localizations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/localization",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"localization"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localization/key",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/localization/About Us",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"localization",
+								"About Us"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "request-provider",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "designation",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "service_area",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "confirmed_password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "g-recaptcha-response",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/request-provider",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"request-provider"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store-register",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Abir",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "abirapi@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/store-register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"store-register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user-verification",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/user-verification/823939",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"user-verification",
+								"823939"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resend-register-code",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "abirapi@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/resend-register-code",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"resend-register-code"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/login-page",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"login-page"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store-login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "user@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/store-login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"store-login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "provider-login-store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "login_as_a_provider",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "provider@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/store-login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"store-login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sanctum-csrf-cookie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/sanctum/csrf-cookie",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sanctum",
+								"csrf-cookie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forget-password",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/forget-password",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"forget-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send-forget-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "abirapi@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/send-forget-password",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"send-forget-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset-password",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/reset-password/287259",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"reset-password",
+								"287259"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store-reset-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "abirapi@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/store-reset-password/287259",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"store-reset-password",
+								"287259"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login/google",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/login/google",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"login",
+								"google"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "callback/google",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "provider",
+									"value": "facebook",
+									"type": "text"
+								},
+								{
+									"key": "access_token",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/callback/google",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"callback",
+								"google"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login/facebook",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/login/facebook",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"login",
+								"facebook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "callback/facebook",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "access_token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "provider",
+									"value": "facebook",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/callback/facebook",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"callback",
+								"facebook"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Dashboard",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FiY3NlcnYudGVzdC9hcGkvc3RvcmUtbG9naW4iLCJpYXQiOjE3Mzc1NDU5OTYsImV4cCI6MTczNzU0OTU5NiwibmJmIjoxNzM3NTQ1OTk2LCJqdGkiOiJxUkE2SldXY21xQVg3bENMIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.KBoqliZ3irCs2EfPz7v9pncFPcHJm5N63CBAd8h6s-U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/dashboard",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"dashboard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-available-schedule",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/get-available-schedule",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"get-available-schedule"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ready-to-booking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/ready-to-booking/electric-oven-repair-fixing-service",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"ready-to-booking",
+								"electric-oven-repair-fixing-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check-schedule-during-payment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/check-schedule-during-payment/electric-oven-repair-fixing-service",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"check-schedule-during-payment",
+								"electric-oven-repair-fixing-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "booking-information",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/booking-information/electric-oven-repair-fixing-service",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"booking-information",
+								"electric-oven-repair-fixing-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/payment/electric-oven-repair-fixing-service?extra_total=5&sub_total=20&total=25&date=02-02-2025&schedule_time_slot=93&ids%5B%5D=29&prices%5B%5D=5&quantities%5B%5D=1&names%5B%5D=Service+One",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"payment",
+								"electric-oven-repair-fixing-service"
+							],
+							"query": [
+								{
+									"key": "extra_total",
+									"value": "5"
+								},
+								{
+									"key": "sub_total",
+									"value": "20"
+								},
+								{
+									"key": "total",
+									"value": "25"
+								},
+								{
+									"key": "date",
+									"value": "02-02-2025"
+								},
+								{
+									"key": "schedule_time_slot",
+									"value": "93"
+								},
+								{
+									"key": "ids%5B%5D",
+									"value": "29"
+								},
+								{
+									"key": "prices%5B%5D",
+									"value": "5"
+								},
+								{
+									"key": "quantities%5B%5D",
+									"value": "1"
+								},
+								{
+									"key": "names%5B%5D",
+									"value": "Service+One"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Abir",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "user@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01787350229",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Joshar bazar, NArsingdi",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1efdc676-e3b7-4fb0-b225-47eb3577c0a2"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/update-profile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"update-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "current_password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/update-password",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"update-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-invoice",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/get-invoice/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"get-invoice",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mark-as-a-complete",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/mark-as-a-complete/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"mark-as-a-complete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mark-as-a-declined",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/mark-as-a-declined/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"mark-as-a-declined",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send-refund-request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "resone",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "account_information",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/send-refund-request",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"send-refund-request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ticket-request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/ticket-request",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"ticket-request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show-ticket",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "send-ticket-message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ticket_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "documents",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/send-ticket-message",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"send-ticket-message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "live-chat",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "load-chat-box",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/load-chat-box/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"load-chat-box",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send-message-to-provider",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "provider_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/send-message-to-provider",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"send-message-to-provider"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "active-methods",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/active-methods",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"active-methods"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "order-complete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Abir",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01787350229",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "JOshar",
+									"type": "text"
+								},
+								{
+									"key": "payment_method",
+									"value": "stripe",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/order-complete/electric-oven-repair-fixing-service?extra_total=5&sub_total=20&total=25&date=03-02-2025&schedule_time_slot=93&ids%5B%5D=29&prices%5B%5D=5&quantities%5B%5D=1&names%5B%5D=Service+One",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"order-complete",
+								"electric-oven-repair-fixing-service"
+							],
+							"query": [
+								{
+									"key": "extra_total",
+									"value": "5"
+								},
+								{
+									"key": "sub_total",
+									"value": "20"
+								},
+								{
+									"key": "total",
+									"value": "25"
+								},
+								{
+									"key": "date",
+									"value": "03-02-2025"
+								},
+								{
+									"key": "schedule_time_slot",
+									"value": "93"
+								},
+								{
+									"key": "ids%5B%5D",
+									"value": "29"
+								},
+								{
+									"key": "prices%5B%5D",
+									"value": "5"
+								},
+								{
+									"key": "quantities%5B%5D",
+									"value": "1"
+								},
+								{
+									"key": "names%5B%5D",
+									"value": "Service+One"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pay-for-booking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/pay-for-booking/130",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"pay-for-booking",
+								"130"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FiY3NlcnYudGVzdC9hcGkvc3RvcmUtbG9naW4iLCJpYXQiOjE3NDY0MjA2MjIsImV4cCI6MTc2MTk3MjYyMiwibmJmIjoxNzQ2NDIwNjIyLCJqdGkiOiJUTnFwcXlhaTVETTBaY2VyIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.IVCYNbIJEiVvcXEW5taA6rcR9VsV6gBZS9FkMqSBWVc",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Provider",
+			"item": [
+				{
+					"name": "provider/dashboard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/dashboard",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"dashboard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my-profile",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "state-by-country",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/state-by-country/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"state-by-country",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "city-by-state",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/city-by-state/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"city-by-state",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "password-update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/password-update",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"password-update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-provider-profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "designation",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/update-provider-profile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"update-provider-profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my-withdraw",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/my-withdraw",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"my-withdraw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my-withdraw.create",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/my-withdraw/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"my-withdraw",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my-withdraw.store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "method_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "withdraw_amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "account_info",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/my-withdraw",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"my-withdraw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my-withdraw.show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/my-withdraw/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"my-withdraw",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my-withdraw.getAllMethodList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/my-withdraw/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"my-withdraw",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my-withdraw.get-withdraw-account-info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/get-withdraw-account-info/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"get-withdraw-account-info",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "service",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "service.create",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/service/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"service",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "service.store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "slug",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "details",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/service",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "service.edit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/service/1/edit",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"service",
+								"1",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "service.update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/service/1?name&slug&price&category_id&details",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"service",
+								"1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": null
+								},
+								{
+									"key": "slug",
+									"value": null
+								},
+								{
+									"key": "price",
+									"value": null
+								},
+								{
+									"key": "category_id",
+									"value": null
+								},
+								{
+									"key": "details",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "service.delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/service/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"service",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "service.service-update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/service-update/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"service-update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "review-list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/review-list",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"review-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show-review",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/show-review/2",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"show-review",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "awaiting-for-approval-service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/awaiting-for-approval-service",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"awaiting-for-approval-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "active-service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/active-service",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"active-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "banned-service",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/banned-service",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"banned-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "schedule",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/schedule",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"schedule"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-schedule",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/update-schedule",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"update-schedule"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "appointment-schedule",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/appointment-schedule",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"appointment-schedule"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "appointment-schedule.create",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/appointment-schedule/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"appointment-schedule",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "appointment-schedule.store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "day",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "start_time",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/appointment-schedule",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"appointment-schedule"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "appointment-schedule.edit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/appointment-schedule/1/edit",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"appointment-schedule",
+								"1",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "appointment-schedule.update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "day",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "start_time",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "end_time",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/appointment-schedule/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"appointment-schedule",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "appointment-schedule.delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/appointment-schedule/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"appointment-schedule",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ticket",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ticket-show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/ticket-show/4",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"ticket-show",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store-ticket-message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ticket_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/store-ticket-message",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"store-ticket-message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create-new-ticket",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/create-new-ticket",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"create-new-ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store-new-ticket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/store-new-ticket",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"store-new-ticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all-booking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/all-booking",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"all-booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "awaiting-booking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/awaiting-booking",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"awaiting-booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "active-booking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/active-booking",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"active-booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "completed-booking",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "declined-booking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/declined-booking",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"declined-booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "booking-declined",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/booking-declined/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"booking-declined",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "booking-approved",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/booking-approved/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"booking-approved",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "booking-show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/booking-show/129",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"booking-show",
+								"129"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "complete-request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/complete-request",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"complete-request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send-order-complete-request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/send-order-complete-request",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"send-order-complete-request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "live-chat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/live-chat",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"live-chat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "load-chat-box",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/load-chat-box/2",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"load-chat-box",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send-message-to-buyer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/send-message-to-buyer",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"send-message-to-buyer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find-new-buyer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/provider/find-new-buyer/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"provider",
+								"find-new-buyer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovLzM2MHNvZnRiZC5jb20vYWJpci9hcGkvc3RvcmUtbG9naW4iLCJpYXQiOjE3NDI1NTQ1MzMsImV4cCI6MTc0MjU1ODEzMywibmJmIjoxNzQyNTU0NTMzLCJqdGkiOiJWdDl3WEpQQ1UwSjZSWVdSIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.cfC0PDoymrRN58dhvPslGJAvBT6Zrg_SMfRKPE6fNx8",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"pm.request.headers.upsert({\r",
+					"    key: \"Accept\",\r",
+					"    value: \"application/json\"\r",
+					"});\r",
+					"\r",
+					"pm.request.headers.add({\r",
+					"    key: \"Language-Code\",\r",
+					"    value: \"bn\"\r",
+					"});\r",
+					"\r",
+					"pm.request.headers.add({\r",
+					"    key: \"Currency-Code\",\r",
+					"    value: \"BDT\"\r",
+					"});"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://abcserv.test",
+			"type": "string"
+		}
+	]
+}

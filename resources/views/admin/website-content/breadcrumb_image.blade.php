@@ -1,0 +1,64 @@
+@extends('admin.master_layout')
+@section('title')
+    <title>{{ __('Banner Image') }}</title>
+@endsection
+@section('admin-content')
+    <!-- Main Content -->
+    <div class="main-content">
+        <section class="section">
+            <div class="section-header">
+                <h1>{{ __('Banner Image') }}</h1>
+                <div class="section-header-breadcrumb">
+                    <div class="breadcrumb-item active"><a href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
+                    </div>
+                    <div class="breadcrumb-item">{{ __('Banner Image') }}</div>
+                </div>
+            </div>
+
+            <div class="section-body">
+
+                <div class="row mt-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive table-invoice">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th width="30%">{{ __('Location') }}</th>
+                                                <th width="30%">{{ __('Image') }}</th>
+                                                <th width="30%">{{ __('New Image') }}</th>
+                                                <th width="10%">{{ __('Action') }}</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($images as $index => $image)
+                                                <tr>
+                                                    <td>{{ $image->location }}</td>
+                                                    <td><img class="m-2" src="{{ asset($image->image) }}" alt=""
+                                                            width="200px"></td>
+                                                    <form action="{{ route('admin.banner-image.update', $image->id) }}"
+                                                        method="POST" enctype="multipart/form-data">
+                                                        @csrf
+                                                        @method('PUT')
+                                                        <td>
+                                                            <input class="form-control" name="image" type="file"
+                                                                required>
+                                                        </td>
+                                                        <td>
+                                                            <button class="btn btn-primary"
+                                                                type="submit">{{ __('Update') }}</button>
+                                                        </td>
+                                                    </form>
+                                                </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+@endsection

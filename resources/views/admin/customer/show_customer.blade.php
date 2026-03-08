@@ -1,0 +1,107 @@
+@extends('admin.master_layout')
+@section('title')
+    <title>{{ __('User Detail') }}</title>
+@endsection
+@section('admin-content')
+    <!-- Main Content -->
+    <div class="main-content">
+        <section class="section">
+            <div class="section-header">
+                <h1>{{ __('User Detail') }}</h1>
+                <div class="section-header-breadcrumb">
+                    <div class="breadcrumb-item active"><a href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
+                    </div>
+                    <div class="breadcrumb-item">{{ __('User Detail') }}</div>
+                </div>
+            </div>
+
+            <div class="section-body">
+                <a class="btn btn-primary" href="{{ route('admin.customer-list') }}"><i class="fas fa-list"></i>
+                    {{ __('User List') }}</a>
+                <div class="row mt-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive table-invoice">
+                                    <table class="table table-striped table-bordered">
+                                        <tr>
+                                            <td>{{ __('Image') }}</td>
+                                            <td>
+                                                @if ($customer->image)
+                                                    <img class="rounded-circle" src="{{ asset($customer->image) }}"
+                                                        alt="" width="80px">
+                                                @endif
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{ __('Name') }}</td>
+                                            <td>{{ html_decode($customer->name) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{ __('Email') }}</td>
+                                            <td>{{ html_decode($customer->email) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{ __('Phone') }}</td>
+                                            <td>{{ html_decode($customer->phone) }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{ __('Address') }}</td>
+                                            <td>{{ html_decode($customer->address) }}</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>{{ __('Status') }}</td>
+                                            <td>
+                                                @if ($customer->status == 1)
+                                                    <a href="javascript:;"
+                                                        onclick="manageCustomerStatus({{ $customer->id }})">
+                                                        <input id="status_toggle" data-toggle="toggle"
+                                                            data-on="{{ __('Active') }}" data-off="{{ __('InActive') }}"
+                                                            data-onstyle="success" data-offstyle="danger" type="checkbox"
+                                                            checked>
+                                                    </a>
+                                                @else
+                                                    <a href="javascript:;"
+                                                        onclick="manageCustomerStatus({{ $customer->id }})">
+                                                        <input id="status_toggle" data-toggle="toggle"
+                                                            data-on="{{ __('Active') }}" data-off="{{ __('InActive') }}"
+                                                            data-onstyle="success" data-offstyle="danger" type="checkbox">
+                                                    </a>
+                                                @endif
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <script>
+        "use strict";
+
+        function manageCustomerStatus(id) {
+            var isDemo = "{{ env('APP_MODE') }}"
+            if (isDemo == 'DEMO') {
+                toastr.error('This Is Demo Version. You Can Not Change Anything');
+                return;
+            }
+            $.ajax({
+                type: "put",
+                data: {
+                    _token: '{{ csrf_token() }}'
+                },
+                url: "{{ url('/admin/customer-status/') }}" + "/" + id,
+                success: function(response) {
+                    toastr.success(response)
+                },
+                error: function(err) {
+
+                }
+            })
+        }
+    </script>
+@endsection
