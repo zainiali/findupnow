@@ -21,6 +21,7 @@ yarn-error.log
 public/uploads/media/
 /.ddev
 /vendor
+/.env
 /database/backup
-.env
-node_modules
+/node_modules
+/public/storage
