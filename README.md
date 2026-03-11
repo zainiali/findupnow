@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Installation Process
 
 - open project and install the project using installer test
@@ -10,3 +11,6 @@
 
 ## TODO UI
 - Too many issues on JOB Module
+=======
+# FindUpNow-Service-Discovery
+>>>>>>> d0819adcaee2c710a8c08bc3240b910c03ee4fc5
